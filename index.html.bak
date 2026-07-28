@@ -16,13 +16,12 @@
 
     <header class="site-header" id="top">
       <div class="shell header-inner">
-        <a class="wordmark" href="index.html" aria-label="koaus shop home">koaus <span>/ shop</span></a>
+        <a class="wordmark" href="index.html" aria-label="koaus home">koaus</a>
         <nav class="desktop-nav" aria-label="Primary navigation">
           <a href="shop.html">Shop</a>
-          <a href="index.html#featured">New picks</a>
-          <a href="index.html#community-reels">Videos</a>
-          <a href="index.html#brand-story">About</a>
-          <a class="studio-link" href="http://localhost:8000">Launch Studio <span aria-hidden="true">↗</span></a>
+          <a href="#featured">New picks</a>
+          <a href="#community-reels">Videos</a>
+          <a href="#brand-story">About</a>
         </nav>
         <div class="header-actions">
           <button class="icon-button search-toggle" type="button" aria-label="Open search" aria-expanded="false" aria-controls="search-panel">
@@ -45,11 +44,10 @@
       </div>
       <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
         <a href="shop.html">Shop</a>
-        <a href="index.html#featured">New picks</a>
-        <a href="index.html#community-reels">Videos</a>
-        <a href="index.html#brand-story">About</a>
-        <a href="http://localhost:8000">Launch Studio ↗</a>
-        <a class="button button--dark" href="index.html#join-title">Join the Launch</a>
+        <a href="#featured">New picks</a>
+        <a href="#community-reels">Videos</a>
+        <a href="#brand-story">About</a>
+        <button class="button button--dark" type="button" data-open-modal="launch-modal">Join the Launch</button>
       </nav>
     </header>
 

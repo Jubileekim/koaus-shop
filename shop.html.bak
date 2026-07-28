@@ -16,13 +16,12 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <div class="shell header-inner">
-        <a class="wordmark" href="index.html" aria-label="koaus shop home">koaus <span>/ shop</span></a>
+        <a class="wordmark" href="index.html" aria-label="koaus home">koaus</a>
         <nav class="desktop-nav" aria-label="Primary navigation">
           <a href="shop.html" aria-current="page">Shop</a>
-          <a href="index.html#featured">New picks</a>
-          <a href="index.html#community-reels">Videos</a>
-          <a href="index.html#brand-story">About</a>
-          <a class="studio-link" href="http://localhost:8000">Launch Studio <span aria-hidden="true">↗</span></a>
+          <a href="index.html#how-it-works">How it works</a>
+          <a href="about.html#for-brands">For Brands</a>
+          <a href="about.html#checker">Checker</a>
         </nav>
         <div class="header-actions">
           <a class="icon-button" href="#catalog-search" aria-label="Search products">
@@ -38,10 +37,9 @@
       </div>
       <nav class="mobile-menu" id="store-mobile-menu" aria-label="Mobile navigation" hidden>
         <a href="shop.html">Shop</a>
-        <a href="index.html#featured">New picks</a>
-        <a href="index.html#community-reels">Videos</a>
-        <a href="index.html#brand-story">About</a>
-        <a href="http://localhost:8000">Launch Studio ↗</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="about.html#for-brands">For Brands</a>
+        <a href="about.html#checker">Checker</a>
         <a class="button button--dark" href="index.html#join-title">Join the Launch</a>
       </nav>
     </header>
