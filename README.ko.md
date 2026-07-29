@@ -1,4 +1,4 @@
-<div align="center">
+<div align="left">
 
 # koaus shop
 
@@ -215,7 +215,7 @@ This repository is currently a front-end MVP.
 
 ---
 
-<div align="center">
+<div align="left">
 
 ### Built for global shoppers. Designed to show Korean brands what overseas commerce can look like.
 ### 해외 소비자를 위해 만들고, 한국 브랜드의 글로벌 판매 가능성을 보여줍니다.
