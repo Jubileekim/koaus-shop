@@ -1,53 +1,119 @@
-# Discover Korean lifestyle goods
+# koaus shop
+
+### Discover Korean lifestyle goods before everyone else.
 
 [English](README.md) | [한국어](README.ko.md)
 
-A responsive static storefront and brand-validation experience for curated Korean stationery, desk goods, small gifts, and lifestyle products.
+**A consumer-first shopping experience for global customers — and a live storefront concept for Korean brands exploring overseas sales.**
 
-The shared visual, typography, bilingual, responsive, and accessibility standards are documented in [`DESIGN.md`](DESIGN.md).
+koaus shop is designed primarily for shoppers in the United States and other English-speaking markets. It curates Korean stationery, desk accessories, small gifts, beauty-adjacent lifestyle goods, and emerging independent brands in a format that feels natural to global consumers.
 
-## Planning
+At the same time, the storefront also serves as a **visual market-entry showcase for Korean brands**. It helps brands imagine how their products could be positioned, discovered, saved, and purchased in an overseas shopping environment.
 
-### Core value
+> **Consumer first. Brand useful.**
+>
+> Built for global shoppers, while giving Korean brands a concrete view of what overseas commerce could look like.
 
-- **Problem:** Global buyers struggle to discover small Korean lifestyle brands, while Korean makers have little evidence of U.S. demand before investing in inventory and logistics.
-- **Solution:** koaus curates promising products and lets global buyers save and vote before a full launch.
-- **Expected effect:** Buyers discover products earlier; brands validate product appeal, price sensitivity, and content angles with lower risk.
+---
 
-### Target users
+## What is koaus shop?
 
-1. U.S. and English-speaking women aged 20–35 interested in K-culture, journaling, desk setups, and small gifts.
-2. Independent Korean lifestyle brands that want to test the U.S. market before committing to a full launch.
+koaus shop is a consumer-facing discovery and shopping platform for international customers interested in Korean lifestyle products.
 
-### Core message and CTA
+For global shoppers, it provides an English-first storefront with editorial product presentation, short-form video, product saving, voting, and purchase-interest interactions.
 
-- Message: **Discover Korean lifestyle goods before everyone else.**
-- Buyer CTA: **Join the Launch List**
-- Brand CTA: **Request a Product Check**
+For Korean brands, it provides a practical preview of:
 
-### Wireframe
+- how products could be presented to overseas customers,
+- how English product storytelling could be structured,
+- how pricing, imagery, UGC, and commerce can work together,
+- and how early consumer interest could be tested before a full international launch.
+
+---
+
+## Core value
+
+| For global consumers | For Korean brands |
+|---|---|
+| Discover distinctive Korean products before they become widely available overseas | See how a product may look and feel in a global storefront |
+| Browse in English with familiar commerce patterns | Preview English copy, pricing, imagery, and content structure |
+| Save products and express purchase interest | Observe early signals such as saves, votes, and content response |
+| Explore products through editorial visuals and short-form video | Test market potential before investing heavily in inventory and logistics |
+
+---
+
+## Primary audience
+
+1. U.S. and English-speaking consumers aged 20–35 interested in K-culture, stationery, desk styling, small gifts, and Korean lifestyle products
+2. Independent Korean brands that want to understand how their products could be presented and validated in the U.S. market
+
+---
+
+## Core message
+
+- **Consumer message:** Discover Korean lifestyle goods before everyone else.
+- **Brand message:** See how your product could live in a global storefront.
+- **Buyer CTA:** Join the Launch List
+- **Brand CTA:** Request a Product Check
+
+---
+
+## Experience concept
+
+```text
+DISCOVER
+Curated Korean products for overseas consumers
+        ↓
+EXPLORE
+Editorial images, product stories, and short-form UGC
+        ↓
+SAVE & REACT
+Wishlist, voting, and launch-interest signals
+        ↓
+SHOP
+A global-facing storefront experience
+        ↓
+VALIDATE
+Early market signals for future brand launches
+```
+
+---
+
+## Product experience
 
 ```text
 HOME
-Hero → Categories → Problem/Solution/Effect → Shop preview
-→ Real-life video routines → Lookbook → Brand Values → Final CTA
-                 ↓
-SHOP → FILTER / SEARCH / SORT → PRODUCT DETAIL
-                 ↓
-ABOUT / HOW IT WORKS
-Problem → Product Picks → 3-Step Process → For Brands
-→ Launch Fit Checker → Journal → Final CTA
+Hero → Categories → Product Discovery → Shop Preview
+→ UGC / Short-form Video → Editorial Lookbook → Final CTA
+
+SHOP
+Filter → Search → Sort → Save → Product Detail
+
+PRODUCT
+Product Story → Price → Source → Save → Purchase Interest
+
+ABOUT
+Consumer Value → Brand Value → How It Works → Launch Fit
 ```
 
-## Run locally
+---
 
-No build step or package installation is required.
+## Implemented features
 
-```bash
-python3 -m http.server 8000
-```
+- Editorial homepage with curated Korean lifestyle products
+- Consumer-first English shopping experience
+- Korean and English language switching
+- Category filtering, real-time search, sorting, and saved-product view
+- Responsive shop and product detail pages
+- Wishlist and product voting stored with `localStorage`
+- Inline short-form video with autoplay, loop, mute, and sound controls
+- Product-detail storytelling, source disclosure, and purchase-interest feedback
+- Launch-list modal and brand product-check prototype
+- Separate `about.html` explaining the platform, process, and Launch Fit concept
+- Keyboard focus management and Escape-key closing behavior
+- Reduced-motion support and Intersection Observer animations
 
-Then open `http://localhost:8000`.
+---
 
 ## Project structure
 
@@ -69,53 +135,52 @@ Then open `http://localhost:8000`.
 │   ├── shop.js
 │   └── product.js
 ├── images/
-│   ├── koaus-hero-collection.jpg
-│   ├── product-*.jpg
-│   └── README.md
 ├── videos/
-│   └── ugc-*.mp4
-└── README.md
+├── README.md
+├── README.ko.md
+└── DESIGN.md
 ```
 
-## Included interactions
+---
 
-- Editorial homepage with a three-product shop preview
-- Dedicated shop catalog with URL-based category filters, live search, sorting, saved-only view, and responsive layouts
-- Dedicated product detail URLs with related picks, source transparency, saving, and pre-order-interest feedback
-- 29CM- and Ohouse-referenced sample products with original KRW and converted USD prices
-- Muted, looping, inline autoplay video routines with optional sound controls
-- Category-relevant real-life footage on product pages
-- Site-wide English/Korean language toggle persisted with `localStorage`
-- Korean translations for static pages, dynamically rendered product cards, form feedback, and product-check results
-- Saved products persisted with `localStorage`
-- Prototype launch-list and brand-check submissions persisted with `localStorage`
-- Saved-picks drawer
-- In-card voting feedback
-- Accessible launch-list modal
-- Complete product-check request modal
-- Separate `about.html` detail page with the original story, process, brand content, and Launch Fit calculator
-- Keyboard focus management and Escape-to-close behavior
-- Intersection Observer reveal animations with reduced-motion support
+## Run locally
 
-## Sample product data
+No build process or package installation is required.
 
-The featured products are educational MVP references selected from 29CM and Ohouse product listings on July 27, 2026.
+```bash
+python3 -m http.server 8000
+```
 
-- Conversion reference: approximately **₩1,461 = $1**, derived from the ECB EUR/KRW and EUR/USD reference rates published July 24, 2026.
-- USD values are simple rounded conversions of the listed KRW prices.
-- Shipping, duties, payment fees, and launch markup are not included.
-- Product names, photographs, and trademarks belong to their respective brands and sellers.
-- Each card links to its original 29CM or Ohouse listing. These references are not presented as current koaus inventory or authorized resale listings.
+Then open:
+
+```text
+http://localhost:8000
+```
+
+---
 
 ## Static deployment
 
-This folder can be deployed directly to Vercel as a static site:
+This project can be deployed directly to Vercel as a static site.
 
-1. Import the repository or upload the project.
-2. Leave the framework preset as **Other**.
-3. Do not set a build command.
+1. Import the GitHub repository into Vercel.
+2. Set **Framework Preset** to `Other`.
+3. Leave **Build Command** empty.
 4. Use the project root as the output directory.
 
-The forms and pre-order interest tools are frontend MVP interactions stored in the visitor's browser. They do not submit to a backend yet.
+---
 
-The current real-life clips are Pexels stock footage used as permission-clear MVP stand-ins and linked to their creators on the page. They are not presented as koaus customer submissions. Replace them with customer-created UGC only after obtaining contributor consent and the necessary usage rights.
+## MVP notes
+
+This repository is currently a front-end MVP.
+
+- Product saves, votes, launch-list submissions, and brand inquiries are stored in the visitor's browser.
+- No production database or email delivery service is connected yet.
+- Sample products and pricing are used for educational and market-validation purposes.
+- Product names, images, and trademarks remain the property of their respective brands and sellers.
+- Sample product cards link to original retailer pages and do not imply that koaus currently owns inventory or official resale rights.
+- Current short-form videos are rights-cleared stock assets for MVP validation and should be replaced with licensed brand or creator UGC before commercial launch.
+
+---
+
+### Built for global shoppers. Designed to show Korean brands what overseas commerce can look like.
