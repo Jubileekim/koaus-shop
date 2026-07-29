@@ -1,55 +1,153 @@
-# Discover Korean lifestyle goods
+<div align="center">
 
-[English](README.md) | [한국어](README.ko.md)
+# koaus shop
 
-한국 문구, 데스크 용품, 소형 선물, 라이프스타일 제품을 큐레이션하고 브랜드의 해외 시장 가능성을 검증하기 위한 반응형 정적 웹사이트입니다.
+### Discover Korean lifestyle goods before everyone else.
+### 누구보다 먼저 한국의 라이프스타일 제품을 발견하세요.
 
-공통 비주얼 시스템, 타이포그래피, 한·영 전환, 반응형 레이아웃, 접근성 기준은 [`DESIGN.md`](DESIGN.md)에 정리되어 있습니다.
+**A consumer-first shopping experience for global customers — and a live storefront concept for Korean brands exploring overseas sales.**
 
-## 기획
+**해외 소비자를 위해 설계된 쇼핑 경험이자, 한국 브랜드가 자사 제품의 글로벌 판매 모습을 미리 확인할 수 있는 쇼케이스입니다.**
+
+[English](#english) · [한국어](#한국어) · [Project Structure](#project-structure) · [Run Locally](#run-locally)
+
+</div>
+
+---
+
+## English
+
+### What is koaus shop?
+
+**koaus shop is a consumer-facing discovery and shopping platform for international customers interested in Korean lifestyle products.**
+
+The experience is designed primarily for shoppers in the United States and other English-speaking markets. It curates Korean stationery, desk accessories, small gifts, beauty-adjacent lifestyle goods, and emerging independent brands in a format that feels natural to global consumers.
+
+At the same time, koaus shop also works as a **visual market-entry showcase for Korean brands**. A brand can look at the storefront and immediately imagine:
+
+- how its product could be presented to overseas customers,
+- how English product storytelling could be structured,
+- how UGC, editorial content, and commerce can work together,
+- and how consumer interest could be tested before a full international launch.
+
+> **Consumer first. Brand useful.**
+>
+> The storefront is built for overseas shoppers, while giving Korean brands a concrete view of how their products may be positioned, discovered, saved, and purchased abroad.
+
+### Core value
+
+| For global consumers | For Korean brands |
+|---|---|
+| Discover distinctive Korean products before they become widely available overseas | See how a product may look and feel in a global storefront |
+| Browse in English with familiar commerce patterns | Preview English copy, pricing, imagery, and content structure |
+| Save products and express purchase interest | Observe early signals such as saves, votes, and content response |
+| Explore products through editorial visuals and short-form video | Test market potential before investing heavily in inventory and logistics |
+
+### Primary audience
+
+- International consumers aged 20–35 interested in K-culture, stationery, desk styling, small gifts, and Korean lifestyle products
+- Korean independent brands that want to understand how their products could be presented and validated in the U.S. market
+
+### Experience concept
+
+```text
+DISCOVER
+Curated Korean products for overseas consumers
+        ↓
+EXPLORE
+Editorial images, product stories, and short-form UGC
+        ↓
+SAVE & REACT
+Wishlist, voting, and launch-interest signals
+        ↓
+SHOP
+A global-facing storefront experience
+        ↓
+VALIDATE
+Early market signals for future brand launches
+```
+
+---
+
+## 한국어
+
+### koaus shop은 무엇인가요?
+
+**koaus shop은 한국 라이프스타일 제품에 관심 있는 해외 소비자를 위한 발견형 쇼핑 플랫폼입니다.**
+
+미국을 포함한 영어권 소비자가 한국 문구, 데스크 용품, 소형 선물, 라이프스타일 제품과 독립 브랜드를 자연스럽게 발견하고 탐색할 수 있도록 설계했습니다.
+
+동시에 이 사이트는 한국 브랜드에게도 의미가 있습니다. 단순한 브랜드 소개 페이지가 아니라, **우리 제품이 실제 해외 소비자용 쇼핑몰에서 어떤 모습으로 판매될 수 있는지 보여주는 글로벌 판매 쇼케이스**이기 때문입니다.
+
+한국 브랜드는 koaus shop을 통해 다음을 구체적으로 확인할 수 있습니다.
+
+- 자사 제품이 해외 소비자에게 어떤 이미지와 문구로 소개될 수 있는지
+- 영문 상품 설명과 가격 구조를 어떻게 구성할 수 있는지
+- 숏폼 영상과 UGC를 상품 판매에 어떻게 연결할 수 있는지
+- 대규모 재고와 물류 투자 전에 소비자 반응을 어떻게 검증할 수 있는지
+
+> **해외 소비자가 먼저 사용하는 쇼핑몰, 한국 브랜드가 해외 판매의 미래를 확인하는 쇼케이스.**
 
 ### 핵심 가치
 
-- **문제:** 해외 소비자는 규모가 작은 한국 라이프스타일 브랜드를 발견하기 어렵고, 한국 브랜드는 재고와 물류에 투자하기 전에 미국 시장의 실제 수요를 확인할 근거가 부족합니다.
-- **해결:** koaus가 가능성 있는 제품을 선별해 소개하고, 정식 출시 전 해외 소비자가 제품을 저장하고 투표할 수 있도록 합니다.
-- **기대 효과:** 소비자는 새로운 한국 제품을 더 일찍 발견하고, 브랜드는 비교적 낮은 위험으로 제품 선호도, 가격 민감도, 콘텐츠 반응을 검증할 수 있습니다.
+| 해외 소비자에게 | 한국 브랜드에게 |
+|---|---|
+| 아직 해외에 널리 알려지지 않은 한국 제품을 먼저 발견 | 자사 제품의 글로벌 쇼핑몰 노출 모습을 미리 확인 |
+| 영어 중심의 익숙한 쇼핑 경험 | 영문 카피, 가격, 이미지, 콘텐츠 구조 참고 |
+| 제품 저장, 투표, 출시 알림 참여 | 저장·투표·콘텐츠 반응을 통한 초기 수요 검증 |
+| 에디토리얼 이미지와 숏폼 영상으로 제품 탐색 | 재고·물류 투자 전 해외 시장 가능성 테스트 |
 
-### 목표 사용자
+### 주요 사용자
 
-1. K-컬처, 다이어리 꾸미기, 데스크테리어, 소형 선물에 관심이 있는 미국 및 영어권의 20~35세 여성
-2. 본격적인 해외 출시 전에 미국 시장 반응을 시험하고 싶은 한국의 독립 라이프스타일 브랜드
+1. K-컬처, 다이어리 꾸미기, 데스크테리어, 소형 선물, 한국 라이프스타일 제품에 관심 있는 미국 및 영어권 20~35세 소비자
+2. 본격적인 미국 진출 전에 자사 제품이 글로벌 소비자에게 어떻게 보일지 확인하고 싶은 한국의 독립 브랜드
 
-### 핵심 메시지와 CTA
+### 핵심 메시지
 
-- 메시지: **다른 사람보다 먼저 한국 라이프스타일 제품을 발견하세요.**
-- 소비자 CTA: **출시 알림 신청하기(Join the Launch List)**
-- 브랜드 CTA: **제품 진단 요청하기(Request a Product Check)**
+- **Consumer message:** Discover Korean lifestyle goods before everyone else.
+- **소비자 메시지:** 누구보다 먼저 한국의 라이프스타일 제품을 발견하세요.
+- **Brand message:** See how your product could live in a global storefront.
+- **브랜드 메시지:** 우리 제품이 글로벌 쇼핑몰에서 판매되는 모습을 확인하세요.
 
-### 와이어프레임
+---
+
+## Product Experience
+
+### Main flow
 
 ```text
 HOME
-히어로 → 카테고리 → 문제/해결/효과 → 숍 미리보기
-→ 실제 사용 영상 → 룩북 → 브랜드 가치 → 최종 CTA
-                    ↓
-SHOP → 필터 / 검색 / 정렬 → 제품 상세
-                    ↓
-ABOUT / HOW IT WORKS
-문제 → 제품 제안 → 3단계 프로세스 → 브랜드 안내
-→ Launch Fit 진단 → 저널 → 최종 CTA
+Hero → Categories → Product Discovery → Shop Preview
+→ UGC / Short-form Video → Editorial Lookbook → Final CTA
+
+SHOP
+Filter → Search → Sort → Save → Product Detail
+
+PRODUCT
+Product Story → Price → Source → Save → Purchase Interest
+
+ABOUT
+Consumer Value → Brand Value → How It Works → Launch Fit
 ```
 
-## 로컬에서 실행하기
+### Implemented features
 
-별도의 빌드나 패키지 설치가 필요하지 않습니다.
+- Editorial homepage with curated Korean lifestyle products
+- Consumer-first English shopping experience
+- Korean and English language switching
+- Category filtering, real-time search, sorting, and saved-product view
+- Responsive shop and product detail pages
+- Wishlist and product voting stored with `localStorage`
+- Inline short-form video with autoplay, loop, mute, and sound controls
+- Product-detail storytelling, source disclosure, and purchase-interest feedback
+- Launch-list modal and brand product-check prototype
+- Separate `about.html` explaining the platform, process, and Launch Fit concept
+- Keyboard focus management and Escape-key closing behavior
+- Reduced-motion support and Intersection Observer animations
 
-```bash
-python3 -m http.server 8000
-```
+---
 
-명령을 실행한 뒤 브라우저에서 `http://localhost:8000`을 열면 됩니다.
-
-## 프로젝트 구조
+## Project Structure
 
 ```text
 .
@@ -69,54 +167,57 @@ python3 -m http.server 8000
 │   ├── shop.js
 │   └── product.js
 ├── images/
-│   ├── koaus-hero-collection.jpg
-│   ├── product-*.jpg
-│   └── README.md
 ├── videos/
-│   └── ugc-*.mp4
 ├── README.md
-└── README.ko.md
+├── README.ko.md
+└── DESIGN.md
 ```
 
-## 구현된 기능
+---
 
-- 3개 제품 미리보기가 포함된 에디토리얼형 홈페이지
-- URL 기반 카테고리 필터, 실시간 검색, 정렬, 저장한 제품만 보기, 반응형 레이아웃을 갖춘 숍 페이지
-- 관련 제품, 출처 안내, 저장 기능, 사전구매 관심도 피드백이 포함된 제품 상세 페이지
-- 29CM와 오늘의집을 참고한 샘플 제품 및 원화·달러 가격 표시
-- 자동 재생, 반복 재생, 기본 음소거 및 선택형 사운드 제어를 지원하는 인라인 영상
-- 제품 카테고리에 맞춘 실제 사용 장면 영상
-- `localStorage`에 선택 상태가 저장되는 사이트 전체 한·영 전환 기능
-- 정적 페이지, 동적 제품 카드, 폼 피드백, 제품 진단 결과의 한국어 번역
-- `localStorage` 기반 관심 제품 저장
-- 출시 알림 신청 및 브랜드 제품 진단 요청의 브라우저 저장형 프로토타입
-- 저장한 제품을 확인하는 드로어
-- 제품 카드 내부 투표 피드백
-- 접근성을 고려한 출시 알림 모달
-- 전체 입력 항목을 갖춘 제품 진단 요청 모달
-- 브랜드 스토리, 운영 방식, 브랜드 안내, Launch Fit 계산기가 포함된 별도 `about.html`
-- 키보드 포커스 관리 및 Escape 키 닫기
-- 모션 감소 설정을 지원하는 Intersection Observer 기반 등장 애니메이션
+## Run Locally
 
-## 샘플 제품 데이터
+No build process or package installation is required.
 
-대표 제품은 2026년 7월 27일 기준 29CM와 오늘의집 상품 페이지를 참고해 교육용 MVP 샘플로 구성했습니다.
+```bash
+python3 -m http.server 8000
+```
 
-- 환율 기준: 2026년 7월 24일 유럽중앙은행의 EUR/KRW 및 EUR/USD 기준 환율에서 계산한 약 **₩1,461 = $1**
-- 달러 가격은 원화 판매가를 단순 환산한 뒤 보기 좋게 반올림한 값입니다.
-- 배송비, 관세, 결제 수수료, 실제 출시 마진은 포함되지 않았습니다.
-- 제품명, 사진, 상표의 권리는 각 브랜드와 판매자에게 있습니다.
-- 각 제품 카드는 원본 29CM 또는 오늘의집 상품 페이지로 연결됩니다. 해당 제품을 koaus의 현재 재고나 공식 판매 권한이 확보된 상품으로 표현하지 않습니다.
+Open:
 
-## 정적 사이트 배포
+```text
+http://localhost:8000
+```
 
-이 폴더는 별도의 빌드 없이 Vercel에 정적 사이트로 배포할 수 있습니다.
+---
 
-1. GitHub 저장소를 불러오거나 프로젝트 폴더를 업로드합니다.
-2. Framework Preset은 **Other**로 설정합니다.
-3. Build Command는 입력하지 않습니다.
-4. 프로젝트 루트를 Output Directory로 사용합니다.
+## Deployment
 
-현재 출시 알림 신청, 관심도 표시, 제품 진단 기능은 방문자의 브라우저에 데이터를 저장하는 프런트엔드 MVP입니다. 아직 서버나 데이터베이스로 전송되지는 않습니다.
+This project can be deployed as a static site on Vercel.
 
-현재 실제 사용 장면 영상은 MVP 검증을 위해 사용 권한이 명확한 Pexels 스톡 영상을 사용하고 페이지에 제작자 출처를 연결했습니다. koaus 고객이 제작한 콘텐츠로 표현하지 않으며, 상업 출시 전에는 기여자의 동의와 필요한 사용 권한을 확보한 실제 고객 UGC로 교체해야 합니다.
+1. Import the GitHub repository into Vercel.
+2. Set **Framework Preset** to `Other`.
+3. Leave **Build Command** empty.
+4. Use the project root as the output directory.
+
+---
+
+## MVP Notes
+
+This repository is currently a front-end MVP.
+
+- Product saves, votes, launch-list submissions, and brand inquiries are stored in the visitor's browser.
+- No production database or email delivery service is connected yet.
+- Sample products and pricing are used for educational and market-validation purposes.
+- Product names, images, and trademarks remain the property of their respective brands and sellers.
+- Sample product cards link to original retailer pages and do not imply that koaus currently owns inventory or official resale rights.
+- Current short-form videos are rights-cleared stock assets for MVP validation and should be replaced with licensed brand or creator UGC before commercial launch.
+
+---
+
+<div align="center">
+
+### Built for global shoppers. Designed to show Korean brands what overseas commerce can look like.
+### 해외 소비자를 위해 만들고, 한국 브랜드의 글로벌 판매 가능성을 보여줍니다.
+
+</div>
