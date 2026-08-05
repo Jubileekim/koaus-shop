@@ -20,7 +20,7 @@
         <nav class="desktop-nav" aria-label="Primary navigation">
           <a href="shop.html">Shop</a>
           <a href="index.html#how-it-works">How it works</a>
-          <a href="about.html#for-brands">For Brands</a>
+          <a href="https://koaus-launch-studio.vercel.app/" target="_blank" rel="noopener noreferrer">For Brands</a>
           <a href="about.html#checker">Checker</a>
         </nav>
         <div class="header-actions">
@@ -38,7 +38,7 @@
       <nav class="mobile-menu" id="store-mobile-menu" aria-label="Mobile navigation" hidden>
         <a href="shop.html">Shop</a>
         <a href="index.html#how-it-works">How it works</a>
-        <a href="about.html#for-brands">For Brands</a>
+        <a href="https://koaus-launch-studio.vercel.app/" target="_blank" rel="noopener noreferrer">For Brands</a>
         <a href="about.html#checker">Checker</a>
         <a class="button button--dark" href="index.html#join-title">Join the Launch</a>
       </nav>
@@ -132,7 +132,7 @@
     <footer class="site-footer">
       <div class="shell footer-main">
         <div><a class="wordmark" href="index.html">koaus</a><p>Curated Korean lifestyle goods for global buyers.</p></div>
-        <nav aria-label="Footer navigation"><a href="shop.html">Shop</a><a href="about.html#for-brands">For Brands</a><a href="about.html">About</a></nav>
+        <nav aria-label="Footer navigation"><a href="shop.html">Shop</a><a href="https://koaus-launch-studio.vercel.app/" target="_blank" rel="noopener noreferrer">For Brands</a><a href="about.html">About</a></nav>
         <div class="footer-contact"><a href="mailto:koaus.market@gmail.com">koaus.market@gmail.com</a><a href="https://www.instagram.com/koaus.shop" target="_blank" rel="noreferrer">Instagram ↗</a></div>
       </div>
       <div class="footer-promise"><div class="shell"><span>✈ Ships from Seoul</span><span>♡ Community curated</span><span>↻ Small-batch testing</span><span>© <span id="current-year"></span> koaus</span></div></div>
